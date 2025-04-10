@@ -202,6 +202,18 @@
     </pluginManagement>
     <plugins>
       <plugin>
+      <groupId>org.pitest</groupId>
+      <artifactId>pitest-maven-plugin</artifactId>
+      <version>1.7.3</version> <!-- Use the latest version available -->
+      <executions>
+        <execution>
+          <goals>
+            <goal>mutationCoverage</goal>
+          </goals>
+        </execution>
+      </executions>
+    </plugin>
+      <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
         <configuration>
           <testExcludes>
